@@ -1,0 +1,19 @@
+
+.bg{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 800px;
+  background-color: black;
+
+  -webkit-animation-name: example-bg11;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-bg11;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-bg11 {
+  0%  { right:0%; left:0%; top:-50%;}
+  100% { right:0%; left:0%; top:6%;}
+}

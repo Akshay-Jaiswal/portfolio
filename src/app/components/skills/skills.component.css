@@ -1,0 +1,255 @@
+.full-width {
+  width: 100%;
+}
+
+.padding-top-25
+{
+  padding-top: 25px;
+}
+
+.margin-top-25
+{
+  margin-top:5%;
+}
+
+.td
+{
+  margin: 10%;
+}
+
+.black
+{
+    background: #000;
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '[';
+    left: -3px;
+    top: -5px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ']';
+    right: -3px;
+    top: -5px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+div.container
+{
+    font-family: Arial;
+    margin: 0em 0em;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font: 14px Arial;
+    margin: 15px 15px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.bg1
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 800px;
+  background: url("../../../assets/images/pinkdesk1.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 100%;
+  -webkit-filter: blur(3px) grayscale(100%);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px) grayscale(100%);
+  -webkit-animation-name: example-bg11;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-bg11;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-bg11 {
+  0%  { right:0%; left:0%; top:-50%;}
+  100% { right:0%; left:0%; top:6%;}
+}
+
+.content
+{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin:5%;
+  -webkit-animation-name: example-bg11;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-bg11;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-bg11 {
+  0%  { right:0%; left:0%; top:-50%;}
+  100% { right:0%; left:0%; top:6%;}
+}
+
+.skill-area
+{
+  /* line-height: 50%; */
+  padding-top: 7%;
+}
+
+.skill-area-name
+{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font: 14px Arial;
+  font-weight: bold;
+}
+
+.skill-name
+{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font: 14px Arial;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding-top: 0.5%;
+}
+
+table{
+  table-layout: auto;
+  width: 100%;
+}
+
+
+.skill-list
+{
+
+}
+
+.skill-item
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+.line{
+  position: relative;
+  width: 1px;
+  height: 90%;
+  border: 0.5px solid #000;
+
+  -webkit-animation-name: example-line1;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-line1;
+  animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes example-line1 {
+    0%  { right:0%; top:-80%;}
+    100% { right:0%; top:0%;}
+  }
+
+/* h1{text-align:center}
+h2{margin-bottom:0;} */
+
+.skill{
+  width:320px;
+  margin:0 auto;
+}
+.rating-bar{
+  background:grey;
+  padding:2px;
+}
+.rating-bar span{
+  display:block;
+  height:5px;
+}
+.rating-bar, .rating-bar span {
+  border-radius:0px;
+}
+
+/* Used to color the bars */
+.black{ background:black; }
+/* .red{ background:red; } */
+
+/* .rate-n, n being the rating from 1 to 10 */
+.rate-1{ width:10%; }
+.rate-2{ width:20%; }
+.rate-3{ width:30%; }
+.rate-4{ width:40%; }
+.rate-5{ width:50%; }
+.rate-6{ width:60%; }
+.rate-7{ width:70%; }
+.rate-8{ width:80%; }
+.rate-9{ width:90%; }
+.rate-10{ width:100%; }
+
+/* CSS3 Animation */
+.animate{
+  animation: progress 2s linear;
+  -moz-animation: progress 2s linear;
+  -webkit-animation: progress 2s linear;
+  -ms-animation: progress 2s linear;
+  -o-animation: progress 2s linear;
+}
+
+/* Span fills 100% of parent div (.rate-n) which may be 10-100% of the width of black bar (.rating) */
+@-webkit-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-moz-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-ms-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@-o-keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}
+@keyframes progress {
+  from { width:0% }
+  to { width:100%; }
+}

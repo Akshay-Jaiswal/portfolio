@@ -1,0 +1,78 @@
+.full-width {
+  width: 100%;
+}
+
+.padding-top-25
+{
+  padding-top: 25px;
+}
+
+.margin-top-25
+{
+  margin-top:5%;
+}
+
+.td
+{
+  margin: 10%;
+}
+
+.black
+{
+    background: #000;
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '[';
+    left: -3px;
+    top: -5px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ']';
+    right: -3px;
+    top: -5px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+div.container
+{
+    font-family: Arial;
+    margin: 0em 0em;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font: 14px Arial;
+    margin: 15px 15px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}

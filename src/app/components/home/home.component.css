@@ -1,0 +1,167 @@
+.no-margin
+{
+  margin: 0 !important;
+}
+
+.full-screen
+{
+  height: 100%;
+  width: 100%;
+}
+
+.padding-right-10
+{
+  padding-right: 10px;
+}
+
+.name
+{
+  text-align:right;
+}
+
+.name2
+{
+  /* padding-top: 120px; */
+  text-align:center;
+}
+
+.name3
+{
+  position: relative;
+  top: 70%;
+  -webkit-animation-name: example-name;
+  -webkit-animation-duration: 1.5s;
+  animation-name: example-name;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-name {
+    0%  { left:0px; top:200%;}
+    100% { left:0px; top:70%;}
+}
+
+.options
+{
+  text-align: left;
+  position: relative;
+  top: 140px;
+  /* left: 100px; */
+  -webkit-animation-name: example-options;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-options;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-options {
+  0%  { left:100%; top:140px;}
+  100% { left:0px; top:140px;}
+}
+
+/* .options-button
+{
+  width: 126px;
+  height: 52px;
+  margin: 20px;
+} */
+
+
+.navbuttons{
+  color: black !important;
+}
+
+.line{
+  position: relative;
+  top: 45%;
+  width: 1px;
+  height: 300px;
+  border: 1px solid white;
+
+  -webkit-animation-name: example-line;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-line;
+  animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes example-line {
+    0%  { right:0%; top:-100%;}
+    100% { right:0%; top:45%;}
+  }
+
+.bg1
+{
+  position: relative;
+  height: 280px;
+  background: url("../../../assets/images/spider.jpeg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-animation-name: example-bg1;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-bg1;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-bg1 {
+  0%  { right:70%; top:0%;}
+  100% { right:0%; top:0%;}
+}
+
+.bg2
+{
+  height: 550px;
+  background-color: black;
+}
+
+/* Brackets go out */
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '[';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ']';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+div.container
+{
+    font-family: Arial;
+    margin: 0 -5em;
+    padding: 10em 8%;
+    text-align: right;
+}
+
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font: 14px Arial;
+    margin: 0px 10px;
+    padding: 15px 15px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
