@@ -1,0 +1,34 @@
+
+.bg{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 800px;
+  background: url("../../../assets/images/aboutmeback3.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 80%;
+  -webkit-filter:grayscale(100%);
+
+  -webkit-animation-name: example-bg11;
+  -webkit-animation-duration: 1.5s;
+  animation-name:  example-bg11;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes example-bg11 {
+  0%  { right:0%; left:0%; top:-50%;}
+  100% { right:0%; left:0%; top:6%;}
+}
+
+.center-msg
+{
+  position: fixed;
+  color: white;
+  top:20%;
+  left:40%;
+  font-family: cursive;
+}

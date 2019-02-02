@@ -79,21 +79,22 @@ div.container a
 
 .bg1
 {
+  /* color: white; */
   position: fixed;
   left: 0;
   right: 0;
   z-index: 1;
   height: 800px;
-  background: url("../../../assets/images/pinkdesk1.jpg") no-repeat center;
+  background: url("../../../assets/images/desk4.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: 50% 100%;
-  -webkit-filter: blur(3px) grayscale(100%);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
+  -webkit-filter: grayscale(100%);
+  /* -moz-filter: blur(3px); */
+  /* -o-filter: blur(3px); */
+  /* -ms-filter: blur(3px); */
   filter: blur(3px) grayscale(100%);
   -webkit-animation-name: example-bg11;
   -webkit-animation-duration: 1.5s;
@@ -132,7 +133,7 @@ div.container a
 
 .skill-area-name
 {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -142,7 +143,7 @@ div.container a
 
 .skill-name
 {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -175,7 +176,7 @@ table{
   position: relative;
   width: 1px;
   height: 90%;
-  border: 0.5px solid #000;
+  border: 0.5px solid #fff;
 
   -webkit-animation-name: example-line1;
   -webkit-animation-duration: 1.5s;
@@ -184,7 +185,7 @@ table{
   }
 
   @-webkit-keyframes example-line1 {
-    0%  { right:0%; top:-80%;}
+    0%  { right:0%; top:-100%;}
     100% { right:0%; top:0%;}
   }
 
@@ -196,7 +197,7 @@ h2{margin-bottom:0;} */
   margin:0 auto;
 }
 .rating-bar{
-  background:grey;
+  background:white;
   padding:2px;
 }
 .rating-bar span{
